@@ -1,5 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic|Roboto+Slab:400,700");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
 /*
 	Editorial by HTML5 UP
 	html5up.net | @ajlkn
@@ -19,6 +20,7 @@ section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
+  font-family: "Pretendard", serif;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline; }
@@ -107,6 +109,7 @@ body, input, select, textarea {
       font-size: 9pt; } }
 
 a {
+  font-family: "Pretendard", serif;
   -moz-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
   -webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
   -ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
@@ -990,7 +993,7 @@ section.special, article.special {
   text-align: center; }
 
 header p {
-  font-family: "Roboto Slab", serif;
+  font-family: "Pretendard", serif;
   font-size: 1em;
   font-weight: 400;
   letter-spacing: 0.075em;
@@ -1214,7 +1217,7 @@ input[type="radio"] + label:before {
 .image {
   border-radius: 0.375em;
   border: 0;
-  display: inline-block;
+  /* display: inline-block; */
   position: relative; }
   .image img {
     border-radius: 0.375em;
@@ -1238,15 +1241,24 @@ input[type="radio"] + label:before {
     .image.fit img {
       width: 100%; }
   .image.main {
-    display: block;
+    flex : auto;
+    /* display: block; */
     margin: 0 0 3em 0;
-    width: 100%; }
+    width: 50%; }
     .image.main img {
       width: 100%; }
 
 a.image {
-  overflow: hidden; }
-  a.image img {
+  overflow: hidden; 
+  height: 300px;
+  display:flex;
+  align-items: stretch;
+  justify-content: center;
+}
+  a.image img { 
+    object-fit: cover;
+    height : 100%;
+    height : 100%;
     -moz-transition: -moz-transform 0.2s ease;
     -webkit-transition: -webkit-transform 0.2s ease;
     -ms-transition: -ms-transform 0.2s ease;
