@@ -2343,3 +2343,19 @@
       border-top: 0;
       margin-top: 0;
       padding-top: 0; }
+
+.badge-container {
+  margin-top:2em;
+  margin-bottom: 2em;
+}
+
+.badge {
+  display: inline-block;
+  background-color: #f56a6a;
+  color: #ffffff;
+  padding: 0.25em 0.75em;
+  border-radius: 0.25em;
+  font-size: 1em;
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
+}
