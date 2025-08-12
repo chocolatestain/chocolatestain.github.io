@@ -2352,10 +2352,21 @@
 .badge {
   display: inline-block;
   background-color: #f56a6a;
+  transition: all 0.5s;
   color: #ffffff;
   padding: 0.25em 0.75em;
   border-radius: 0.25em;
   font-size: 1em;
   margin-right: 0.5em;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.5em;  
+
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none
+}
+
+.badge:hover {
+    background: #9b0000;
+    color: #fff;
 }
